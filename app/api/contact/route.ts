@@ -340,7 +340,7 @@ export async function POST(req: Request) {
             </p>
             <p style="margin-top: 15px; opacity: 0.7;">
               Made with ❤️ and lots of ☕ | Portfolio: 
-              <a href="https://your-portfolio-url.com">your-portfolio-url.com</a>
+              <a href="shrawan-portfolio.vercel.app">your-portfolio-url.com</a>
             </p>
           </div>
         </div>
