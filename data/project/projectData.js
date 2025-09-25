@@ -110,4 +110,31 @@ export const projects = [
       "Customizable widgets",
     ],
   },
+  {
+  id: 5,
+  title: "Online Learning Platform",
+  description: "AI-powered e-learning platform with interactive courses",
+  longDescription:
+    "A full-featured online learning platform built with Next.js, Node.js, and MongoDB. Features include AI-based course recommendations, video streaming, quizzes, progress tracking, gamification, and real-time discussion forums. The platform supports multiple courses, instructor dashboards, and personalized learning paths.",
+  image:
+    "https://images.pexels.com/photos/4145196/pexels-photo-4145196.jpeg?auto=compress&cs=tinysrgb&w=800",
+  tech: ["Next.js", "Node.js", "MongoDB", "Express", "TypeScript", "Tailwind CSS", "JWT"],
+  github: "https://github.com",
+  live: "https://demo.com",
+  category: "Full-Stack",
+  date: "2025",
+  team: "4 Developers",
+  duration: "5 months",
+  features: [
+    "AI-based course recommendations",
+    "Video streaming & content library",
+    "Interactive quizzes & assignments",
+    "Progress tracking & achievements",
+    "Instructor dashboards",
+    "Discussion forums & messaging",
+    "Gamification & badges",
+    "Responsive design across devices",
+  ],
+}
+
 ];
