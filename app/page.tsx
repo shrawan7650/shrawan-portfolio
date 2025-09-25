@@ -10,7 +10,7 @@ import Resume from "@/components/sections/Resume";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 import Navbar from "@/components/layout/Navbar";
-import ScrollProgress from "@/components/ui/ScrollProgress";
+// import ScrollProgress from "@/components/ui/ScrollProgress";
 import EnhancedSkillsShowcase from "@/components/sections/Skills";
 
 export default function Home() {

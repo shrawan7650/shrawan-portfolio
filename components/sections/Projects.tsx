@@ -97,7 +97,19 @@ const Projects = () => {
             {filteredProjects.map((project) => (
               <motion.div
                 key={project.id}
-                variants={cardVariants}
+                variants={{
+                  hidden: { opacity: 0, y: 50, scale: 0.9 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
+                    transition: {
+                      type: "spring" as const, // BEGIN: Fix for type issue
+                      stiffness: 100,
+                      damping: 15,
+                    },
+                  },
+                }}
                 layout
                 className="group relative bg-gray-800/50 backdrop-blur-lg rounded-xl overflow-hidden border border-gray-700 hover:border-cyan-400/50 transition-all duration-300"
                 whileHover={{ y: -10, scale: 1.02 }}

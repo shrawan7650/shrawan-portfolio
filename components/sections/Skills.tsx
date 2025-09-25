@@ -10,7 +10,7 @@ import {
 
 const EnhancedSkillsShowcase = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.1 });
+  const isInView = useInView(ref, { once: true });
   const [activeCategory, setActiveCategory] = useState(0);
   const [isAnimating, setIsAnimating] = useState(true);
   const [selectedSkill, setSelectedSkill] = useState(null);

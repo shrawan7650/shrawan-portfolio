@@ -15,7 +15,7 @@ import { experiences, education, certifications } from "../../data/resume/resume
 
 const Resume = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.1 });
+  const isInView = useInView(ref, { once: true });
 
 
 
