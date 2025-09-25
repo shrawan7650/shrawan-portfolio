@@ -14,10 +14,12 @@ import {
   AlertCircle,
 } from "lucide-react";
 
+import { FieldError } from "react-hook-form";
+
 const Contact = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.1 });
-  const [submitStatus, setSubmitStatus] = useState(null);
+  const isInView = useInView(ref, { once: true }); // Removed threshold
+  const [submitStatus, setSubmitStatus] = useState<any>(null);
 
   const {
     register,
@@ -26,7 +28,7 @@ const Contact = () => {
     reset,
   } = useForm();
 
-  const onSubmit = async (data: {
+  const onSubmit: any = async (data: {
     firstName: string;
     lastName: string;
     email: string;
@@ -180,21 +182,21 @@ const Contact = () => {
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-gray-300 text-sm font-medium mb-2">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    {...register("firstName", {
-                      required: "First name is required",
-                    })}
-                    className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
-                    placeholder="John"
-                  />
-                  {errors.firstName && (
-                    <p className="text-red-400 text-sm mt-1">
-                      {errors.firstName.message}
-                    </p>
-                  )}
+                      First Name
+                    </label>
+                    <input
+                      type="text"
+                      {...register("firstName", {
+                        required: "First name is required",
+                      })}
+                      className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
+                      placeholder="John"
+                    />
+                    {errors.firstName && (
+                      <p className="text-red-400 text-sm mt-1">
+                        {(errors.firstName as FieldError).message || "Error"}
+                      </p>
+                    )}
                 </div>
 
                 <div>
@@ -211,7 +213,7 @@ const Contact = () => {
                   />
                   {errors.lastName && (
                     <p className="text-red-400 text-sm mt-1">
-                      {errors.lastName.message}
+                      {(errors.lastName as FieldError).message || "Error"}
                     </p>
                   )}
                 </div>
@@ -235,7 +237,7 @@ const Contact = () => {
                 />
                 {errors.email && (
                   <p className="text-red-400 text-sm mt-1">
-                    {errors.email.message}
+                     {(errors.email as FieldError).message || "Error"}
                   </p>
                 )}
               </div>
@@ -252,7 +254,7 @@ const Contact = () => {
                 />
                 {errors.subject && (
                   <p className="text-red-400 text-sm mt-1">
-                    {errors.subject.message}
+                     {(errors.subject as FieldError).message || "Error"}
                   </p>
                 )}
               </div>
@@ -269,7 +271,7 @@ const Contact = () => {
                 />
                 {errors.message && (
                   <p className="text-red-400 text-sm mt-1">
-                    {errors.message.message}
+                     {(errors.message as FieldError).message || "Error"}
                   </p>
                 )}
               </div>

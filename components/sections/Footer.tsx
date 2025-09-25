@@ -19,7 +19,7 @@ import {
 
 const Footer = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.1 });
+  const isInView = useInView(ref, { once: true });
 
   // Single consolidated data object
   const footerData = {

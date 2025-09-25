@@ -8,7 +8,7 @@ import { ExternalLink, Github, X, Calendar, Users, Code } from "lucide-react";
 import { projects } from "../../data/project/projectData";
 const Projects = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.1 });
+  const isInView = useInView(ref, { once: true});
   const [selectedProject, setSelectedProject] = useState(null);
 
   const categories = ["All", "Full-Stack", "Frontend", "Mobile"];

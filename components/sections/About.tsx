@@ -10,7 +10,7 @@ import { aboutConfig } from "../../data/about/aboutData";
 
 const About = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.1 });
+  const isInView = useInView(ref, { once: true }); // BEGIN: Fix for threshold issue
 
   return (
     <section id="about" className="py-20 relative" ref={ref}>
