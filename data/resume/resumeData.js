@@ -26,13 +26,13 @@ export const education = [
     degree: "Intermediate (JAC)",
     school: "P.K. Royal Memorial College, Jharkhand",
     period: "2020 - 2021",
-    description: "Percentage: 68.7%",
+    description: "",
   },
   {
     degree: "Matriculation (CBSE)",
     school: "Doon Public School, Jharkhand",
     period: "2018 - 2019",
-    description: "Percentage: 67.8%",
+    description: "",
   },
 ];
 
