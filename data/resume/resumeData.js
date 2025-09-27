@@ -1,56 +1,43 @@
 export const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "TechCorp Solutions",
-    period: "2022 - Present",
+    title: "MERN Stack Developer",
+    company: "Medjeex",
+    period: "Nov 2024 - May 2025",
     description:
-      "Led development of 5+ major web applications using MERN stack. Mentored junior developers and implemented CI/CD pipelines.",
+      "Developed full-stack web applications using the MERN stack with a focus on secure API design, performance optimization, and responsive UI implementation.",
     highlights: [
-      "Increased app performance by 40%",
-      "Led team of 4 developers",
-      "Implemented microservices architecture",
-    ],
-  },
-  {
-    title: "Full Stack Developer",
-    company: "StartupXYZ",
-    period: "2020 - 2022",
-    description:
-      "Developed and maintained React applications with Node.js backends. Collaborated with design team to implement pixel-perfect UIs.",
-    highlights: [
-      "Built 3 major features from scratch",
-      "Reduced load times by 60%",
-      "Implemented real-time features",
-    ],
-  },
-  {
-    title: "Frontend Developer",
-    company: "WebAgency Pro",
-    period: "2019 - 2020",
-    description:
-      "Created responsive websites and web applications for various clients using modern JavaScript frameworks.",
-    highlights: [
-      "Delivered 15+ client projects",
-      "100% client satisfaction rate",
-      "Specialized in React development",
+      "Built and deployed scalable full-stack applications",
+      "Designed and implemented secure backend APIs",
+      "Optimized load times and improved user experience",
+      "Received positive feedback during code reviews and evaluations",
     ],
   },
 ];
 
 export const education = [
   {
-    degree: "Bachelor of Computer Science",
-    school: "University of Technology",
-    period: "2015 - 2019",
+    degree: "Bachelor of Computer Science Engineering",
+    school: "Chandigarh University",
+    period: "2022 - 2026",
     description:
-      "Specialized in Software Engineering with focus on web technologies and database systems.",
-    gpa: "3.8/4.0",
+      "Focused on software engineering, web development, and database systems. Actively participated in hackathons, coding events, and entrepreneurship initiatives.",
+  },
+  {
+    degree: "Intermediate (JAC)",
+    school: "P.K. Royal Memorial College, Jharkhand",
+    period: "2020 - 2021",
+    description: "Percentage: 68.7%",
+  },
+  {
+    degree: "Matriculation (CBSE)",
+    school: "Doon Public School, Jharkhand",
+    period: "2018 - 2019",
+    description: "Percentage: 67.8%",
   },
 ];
 
 export const certifications = [
-  "AWS Certified Solutions Architect",
-  "MongoDB Certified Developer",
-  "React Advanced Certification",
-  "Node.js Professional Certificate",
+  "150+ coding problems solved on LeetCode, HackerRank, and GeeksforGeeks",
+  "Hackathon participation and coding competitions",
+  "Entrepreneurship Club member at Chandigarh University",
 ];
